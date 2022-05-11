@@ -16,7 +16,7 @@ public class Problem30 {
         ArrayList<Double>salaryEmployees = new ArrayList<>();
         salaryEmployees.add(99999.99);
         salaryEmployees.add(10000000.05);
-        salaryEmployees.add(987546.00);
+        salaryEmployees.add(9777546.00);
         salaryEmployees.add(7896.65);
         System.out.println("Hello user. Welcome to the program");
 
