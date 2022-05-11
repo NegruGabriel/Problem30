@@ -8,13 +8,17 @@ public class Problem30 {
         boolean shouldTerminateTheProgram =true;
         boolean canContinueRunProgram =false;
 
+        System.out.println("Hello user. Welcome to the program");
+
         ArrayList<String>nameEmployees =new ArrayList<>();
         nameEmployees.add("Florin Neagu");
         nameEmployees.add("Diana Albu");
         nameEmployees.add("Elena Silvan");
         nameEmployees.add("Mirel Condur");
 
-
+        for (int n =0; n<nameEmployees.size(); n++){
+            System.out.println(nameEmployees.get(n));
+        }
 
         ArrayList<Double>salaryEmployees = new ArrayList<>();
         salaryEmployees.add(99999.99);
@@ -22,7 +26,11 @@ public class Problem30 {
         salaryEmployees.add(9777546.00);
         salaryEmployees.add(7896.65);
 
-        System.out.println("Hello user. Welcome to the program");
+        for(int s=0; s<salaryEmployees.size();s++){
+            System.out.println(salaryEmployees.get(s));
+        }
+
+        System.out.println("Tha salary of the employees is : "+salaryEmployees);
 
         Scanner sc = new Scanner(System.in);
 
@@ -30,7 +38,7 @@ public class Problem30 {
         String employeesName= sc.nextLine();
 
         System.out.println("Please enter the Employee salary: ");
-        double employeesSalary = sc.nextDouble();
+        Double employeesSalary = sc.nextDouble();
 
 
 
