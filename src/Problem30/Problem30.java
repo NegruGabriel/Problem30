@@ -1,6 +1,7 @@
 package Problem30;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Problem30 {
     public static void main(String[] args) {
@@ -18,7 +19,14 @@ public class Problem30 {
         salaryEmployees.add(10000000.05);
         salaryEmployees.add(9777546.00);
         salaryEmployees.add(7896.65);
+
         System.out.println("Hello user. Welcome to the program");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the Employee name: ");
+
+
+
 
 
 
