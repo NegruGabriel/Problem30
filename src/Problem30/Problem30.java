@@ -16,18 +16,14 @@ public class Problem30 {
         nameEmployees.add("Elena Silvan");
         nameEmployees.add("Mirel Condur");
 
-        for (int n =0; n<nameEmployees.size(); n++){
-            System.out.println(nameEmployees.get(n));
-        }
-
         ArrayList<Double>salaryEmployees = new ArrayList<>();
         salaryEmployees.add(99999.99);
         salaryEmployees.add(10000000.05);
         salaryEmployees.add(9777546.00);
         salaryEmployees.add(7896.65);
 
-        for(int s=0; s<salaryEmployees.size();s++){
-            System.out.println(salaryEmployees.get(s));
+        for (int n =0; n<nameEmployees.size(); n++){
+            System.out.println(nameEmployees.get(n) + " - " +salaryEmployees.get(n));
         }
 
         System.out.println("Tha salary of the employees is : "+salaryEmployees);
