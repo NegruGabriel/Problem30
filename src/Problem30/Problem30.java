@@ -14,7 +14,7 @@ public class Problem30 {
         ArrayList<String> nameEmployees = new ArrayList<>();
         //
         ArrayList<Double> salaryEmployees = new ArrayList<>();
-        double maximumSalary =salaryEmployees[0];
+        //double maximumSalary =salaryEmployees.get(0);
 
         Scanner sc = new Scanner(System.in);
         String userAnswer;
@@ -38,8 +38,15 @@ public class Problem30 {
             employeesName = sc.nextLine();
         }
         while (!employeesName.equals("quit"));
+        double maximumSalary =salaryEmployees.get(0);
+        for (double i =0; i<salaryEmployees.lenght;i++){
+            if (salaryEmployees[i]> maximumSalary){
+                maximumSalary=salaryEmployees[i];
+            }
+        }
 
-        for (int n = 0; n < nameEmployees.size(); n++)
+
+        for (int n=0; n < nameEmployees.size(); n++)
         {
             System.out.println(nameEmployees.get(n) + " - " + salaryEmployees.get(n));
 
