@@ -39,18 +39,19 @@ public class Problem30 {
         }
         while (!employeesName.equals("quit"));
         double maximumSalary =salaryEmployees.get(0);
-        for (double i =0; i<salaryEmployees.lenght;i++){
-            if (salaryEmployees[i]> maximumSalary){
-                maximumSalary=salaryEmployees[i];
+        for (int i =0; i<salaryEmployees.get(0); i++){
+            if ( i > maximumSalary){
+                maximumSalary=salaryEmployees.get(0);
+                System.out.println(maximumSalary);
             }
         }
 
 
-        for (int n=0; n < nameEmployees.size(); n++)
-        {
-            System.out.println(nameEmployees.get(n) + " - " + salaryEmployees.get(n));
+        //for (int n=0; n < nameEmployees.size(); n++)
+       // {
+          //  System.out.println(nameEmployees.get(n) + " - " + salaryEmployees.get(n));
 
-        }
+       // }
 
 
 
