@@ -14,6 +14,7 @@ public class Problem30 {
         ArrayList<String> nameEmployees = new ArrayList<>();
         //
         ArrayList<Double> salaryEmployees = new ArrayList<>();
+        double maximumSalary =salaryEmployees[0];
 
         Scanner sc = new Scanner(System.in);
         String userAnswer;
@@ -38,9 +39,14 @@ public class Problem30 {
         }
         while (!employeesName.equals("quit"));
 
-        for (int n = 0; n < nameEmployees.size(); n++) {
+        for (int n = 0; n < nameEmployees.size(); n++)
+        {
             System.out.println(nameEmployees.get(n) + " - " + salaryEmployees.get(n));
+
         }
+
+
+
 
 
         //System.out.println("Tha salary of the employees is : "+salaryEmployees);
