@@ -38,13 +38,25 @@ public class Problem30 {
             employeesName = sc.nextLine();
         }
         while (!employeesName.equals("quit"));
+
         double maximumSalary =salaryEmployees.get(0);
-        for (int i =0; i<salaryEmployees.get(0); i++){
-            if ( i > maximumSalary){
-                maximumSalary=salaryEmployees.get(0);
-                System.out.println(maximumSalary);
+
+        for  (int i = 0; i < salaryEmployees.size(); i++) {
+            if (salaryEmployees.get(i) > maximumSalary) {
+                maximumSalary = salaryEmployees.get(i);
             }
         }
+        System.out.println(maximumSalary);
+
+        }
+        for  (int i = 0; i < salaryEmployees.size(); i++) {
+        double currentSalary = salaryEmployees.get(i);
+        String currentName = nameEmployees.get(i);
+        if ( currentSalary == maximumSalary ) {
+            System.out.println(currentName + " - " + currentSalary);
+        }
+
+
 
 
         //for (int n=0; n < nameEmployees.size(); n++)
