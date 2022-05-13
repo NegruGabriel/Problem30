@@ -5,15 +5,15 @@ import java.util.Scanner;
 
 public class Problem30 {
     public static void main(String[] args) {
-        boolean shouldTerminateTheProgram = true;
-        boolean canContinueRunProgram = false;
+        //boolean shouldTerminateTheProgram = true;
+        //boolean canContinueRunProgram = false;
 
         System.out.println("Hello user. Welcome to the program");
 
         // names = []
-        ArrayList<String> nameEmployees = new ArrayList<>();
+        ArrayList<String> nameEmployees = new ArrayList<String>();
         //
-        ArrayList<Double> salaryEmployees = new ArrayList<>();
+        ArrayList<Double> salaryEmployees = new ArrayList<Double>();
         //double maximumSalary =salaryEmployees.get(0);
 
         Scanner sc = new Scanner(System.in);
@@ -39,39 +39,22 @@ public class Problem30 {
         }
         while (!employeesName.equals("quit"));
 
-        double maximumSalary =salaryEmployees.get(0);
+        double maximumSalary = salaryEmployees.get(0);
 
-        for  (int i = 0; i < salaryEmployees.size(); i++) {
+        for (int i = 0; i < salaryEmployees.size(); i++) {
             if (salaryEmployees.get(i) > maximumSalary) {
                 maximumSalary = salaryEmployees.get(i);
             }
         }
         System.out.println(maximumSalary);
 
-        for  (int i = 0; i < salaryEmployees.size(); i++) {
+        for (int i = 0; i < salaryEmployees.size(); i++) {
             double currentSalary = salaryEmployees.get(i);
             String currentName = nameEmployees.get(i);
-            if ( currentSalary == maximumSalary ) {
+            if (currentSalary == maximumSalary) {
                 System.out.println(currentName + " - " + currentSalary);
 
+            }
         }
-
-        }
-
-
-
-
-        //for (int n=0; n < nameEmployees.size(); n++)
-       // {
-          //  System.out.println(nameEmployees.get(n) + " - " + salaryEmployees.get(n));
-
-       // }
-
-
-
-
-
-        //System.out.println("Tha salary of the employees is : "+salaryEmployees);
-
     }
 }
