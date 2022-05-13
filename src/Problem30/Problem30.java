@@ -48,12 +48,14 @@ public class Problem30 {
         }
         System.out.println(maximumSalary);
 
-        }
         for  (int i = 0; i < salaryEmployees.size(); i++) {
-        double currentSalary = salaryEmployees.get(i);
-        String currentName = nameEmployees.get(i);
-        if ( currentSalary == maximumSalary ) {
-            System.out.println(currentName + " - " + currentSalary);
+            double currentSalary = salaryEmployees.get(i);
+            String currentName = nameEmployees.get(i);
+            if ( currentSalary == maximumSalary ) {
+                System.out.println(currentName + " - " + currentSalary);
+
+        }
+
         }
 
 
